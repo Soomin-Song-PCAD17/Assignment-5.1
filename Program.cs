@@ -39,7 +39,7 @@ do
     if(validInput)
     {
     AssignmentMethods.DigitSums(parsedNumber);
-        Console.WriteLine($"Type 'quit' to quit or continue typing in numbers.");
+        Console.WriteLine($"Type 'quit' to quit or continue typing in integers.");
     }
 } while (validInput);
 

@@ -27,6 +27,7 @@ namespace Assignment_5._1
         {
             int inputNum = num;
             int sum = 0;
+            if(num<0) { num = -num; }
             while (num > 0)
             {
                 sum += num % 10;
