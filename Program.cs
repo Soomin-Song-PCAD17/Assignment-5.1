@@ -1,4 +1,6 @@
-﻿// 1. Given an integer x, return true if x is a palindrome, and false otherwise.
+﻿using Assignment_5._1;
+
+// 1. Given an integer x, return true if x is a palindrome, and false otherwise.
 //Example 1:
 //Input: x = 121
 //Output: true
@@ -8,7 +10,16 @@
 //Output: false
 //Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
 
-
+Console.WriteLine("5.1.1 Given an integer x, return true if x is a palindrome, and false otherwise.\n");
+AssignmentMethods.IsPalindrome(123);
+AssignmentMethods.IsPalindrome(-123);
+AssignmentMethods.IsPalindrome(121);
+AssignmentMethods.IsPalindrome(11);
+AssignmentMethods.IsPalindrome(0);
+AssignmentMethods.IsPalindrome(51);
+AssignmentMethods.IsPalindrome(3113);
+AssignmentMethods.IsPalindrome(41214);
+AssignmentMethods.IsPalindrome(41234);
 
 //2. Write a program in C# Sharp to create a function to calculate the sum of the individual digits of a given number.
 //Test Data :
