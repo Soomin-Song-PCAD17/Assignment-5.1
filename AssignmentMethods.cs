@@ -23,5 +23,18 @@ namespace Assignment_5._1
             Console.WriteLine($"{forwardNum} backward: {reversedNum}\n\tPalindrome? {forwardNum==reversedNum}");
             return forwardNum==reversedNum;
         }
+        public static int DigitSums(int num)
+        {
+            int inputNum = num;
+            int sum = 0;
+            while (num > 0)
+            {
+                sum += num % 10;
+                num /= 10;
+            }
+            Console.WriteLine($"The sum of the digits of the number {inputNum} is {sum}");
+            return sum;
+
+        }
     }
 }

@@ -11,6 +11,7 @@
 //Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
 
 Console.WriteLine("5.1.1 Given an integer x, return true if x is a palindrome, and false otherwise.\n");
+
 AssignmentMethods.IsPalindrome(123);
 AssignmentMethods.IsPalindrome(-123);
 AssignmentMethods.IsPalindrome(121);
@@ -27,7 +28,21 @@ AssignmentMethods.IsPalindrome(41234);
 //Expected Output :
 //The sum of the digits of the number 1234 is : 10
 
+Console.WriteLine("\n5.1.2. Write a program in C# Sharp to create a function to calculate the sum of the individual digits of a given number.\n");
 
+bool validInput;
+do
+{
+    Console.Write("Enter a number: ");
+    string command = Console.ReadLine();
+    validInput = int.TryParse(command, out var parsedNumber);
+    if(validInput)
+    {
+    AssignmentMethods.DigitSums(parsedNumber);
+        Console.WriteLine($"Type 'quit' to quit or continue typing in numbers.");
+    }
+} while (validInput);
+Console.WriteLine();
 
 //3.Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
 //Example 1:
@@ -39,5 +54,6 @@ AssignmentMethods.IsPalindrome(41234);
 //Example 3:
 //Input: nums = [1, 1, 1, 3, 3, 4, 3, 2, 4, 2]
 //Output: true
+Console.WriteLine("5.3.3. Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.");
 
 
