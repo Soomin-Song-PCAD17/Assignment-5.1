@@ -36,5 +36,33 @@ namespace Assignment_5._1
             return sum;
 
         }
+
+        public static bool HasDuplicates(int[] nums)
+        {
+            Console.Write("In the array [");
+            foreach(int num in nums)
+            {
+                Console.Write($"{num}, ");
+            }
+            (int left, int top) = Console.GetCursorPosition();
+            Console.SetCursorPosition(left-2, top);
+            Console.Write("], ");
+
+            Dictionary<int,bool> dict = new Dictionary<int,bool>();
+            foreach (int num in nums)
+            {
+                if(dict.ContainsKey(num))
+                {
+                    Console.WriteLine($"{num} is found more than once.");
+                    return true;
+                }
+                else
+                {
+                    dict.Add(num, true);
+                }
+            }
+            Console.WriteLine("there are no duplicates.");
+            return false;
+        }
     }
 }
