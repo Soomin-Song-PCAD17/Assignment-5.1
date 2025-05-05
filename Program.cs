@@ -57,4 +57,6 @@ Console.WriteLine("\n5.1.3. Given an integer array nums, return true if any valu
 AssignmentMethods.HasDuplicates([1, 2, 3, 1]);
 AssignmentMethods.HasDuplicates([1, 2, 3, 4]);
 AssignmentMethods.HasDuplicates([1, 1, 1, 3, 3, 4, 3, 2, 4, 2]);
+AssignmentMethods.HasDuplicates([-1, 10, 12, 356, 3, 42, 31, 266, -4, 2]);
 
+Console.ReadKey();
